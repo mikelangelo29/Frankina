@@ -1,0 +1,43 @@
+{
+  "valutazioni_aperte": [],
+  "valutazioni_completate": [
+    {
+      "timestamp": "28/09/2025 19:08",
+      "schede": [
+        {
+          "nome": "Dati Anamnestici",
+          "combos": [
+            "confuso-inappropriato",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "note": ""
+        },
+        {
+          "nome": "Conclusioni",
+          "combos": [
+            "SI",
+            "2. moderata-severa",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "note": ""
+        }
+      ]
+    }
+  ],
+  "report_indici": [
+    "28-09-2025_19-08"
+  ],
+  "report_completi": [
+    "28-09-2025_19-08"
+  ],
+  "grafici": []
+}

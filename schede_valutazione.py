@@ -1226,6 +1226,11 @@ class SchedeValutazioneWindow(QWidget):
                     nome_tab = self.tab_widget.tabText(idx)
                     for scheda in valutazione.get("schede", []):
                         if scheda.get("nome") == nome_tab:
+                            # PATCH: Salta Prassie BLF se tutte zero
+                            if nome_tab == "Prassie BLF":
+                                combos = scheda.get("combos", [])
+                                if not combos or all((str(v).strip() == "0" or not str(v).strip()) for v in combos):
+                                    continue  # NON aggiungere!
                             schede_da_stampare.append(scheda)
                             break
             # === COPILOT FINE: filtro schede selezionate ===
